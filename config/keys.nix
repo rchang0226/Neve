@@ -437,11 +437,8 @@
 
       # fd instead of pressing esc 
       {
-        mode = ["i"
-          "v"
-          "V"
-          "x"
-          ":"
+        mode = ["!"
+          " "
         ];
         key = "fd";
         action = "<Esc>";
