@@ -447,7 +447,7 @@
       {
         mode = "t";
         key = "fd";
-        action = "<C-\\>n";
+        action = "<C-\\><C-n>";
       }
 
       {
