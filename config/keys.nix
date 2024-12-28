@@ -1,6 +1,9 @@
 # Thanks for the keybinds primeagen and folke!
-{ lib, config, ... }:
 {
+  lib,
+  config,
+  ...
+}: {
   options = {
     keys.enable = lib.mkEnableOption "Enable keys module";
   };
@@ -435,9 +438,10 @@
         };
       }
 
-      # fd instead of pressing esc 
+      # fd instead of pressing esc
       {
-        mode = ["!"
+        mode = [
+          "!"
           ""
         ];
         key = "fd";
