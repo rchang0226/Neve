@@ -435,10 +435,15 @@
         };
       }
 
-      # <C-c> instead of pressing esc just because
+      # fd instead of pressing esc 
       {
-        mode = "i";
-        key = "<C-c>";
+        mode = ["i"
+          "v"
+          "V"
+          "x"
+          ":"
+        ];
+        key = "fd";
         action = "<Esc>";
       }
 
