@@ -445,6 +445,12 @@
       }
 
       {
+        mode = "t";
+        key = "fd";
+        action = "<C-\>n";
+      }
+
+      {
         mode = "n";
         key = "<C-f>";
         action = "!tmux new tmux-sessionizer<CR>";
