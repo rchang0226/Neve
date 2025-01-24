@@ -1,10 +1,12 @@
-{ lib, config, ... }:
 {
+  lib,
+  config,
+  ...
+}: {
   options = {
     fidget.enable = lib.mkEnableOption "Enable fidget module";
   };
   config = lib.mkIf config.fidget.enable {
-
     plugins.fidget = {
       enable = true;
       logger = {
@@ -29,7 +31,7 @@
           ''
             function(msg) return msg.lsp_client.name end
           '';
-        ignore = [ ]; # List of LSP servers to ignore
+        ignore = []; # List of LSP servers to ignore
         lsp = {
           progressRingbufSize = 0; # Configure the nvim's LSP progress ring buffer size
         };
@@ -77,7 +79,7 @@
           end
         '';
         configs = {
-          default = "require('fidget.notification').default_config";
+          default = ''require('fidget.notification').default_config'';
         };
 
         window = {
