@@ -78,11 +78,9 @@
             end
           end
         '';
-        # configs = {
-        #   default = ''
-        #     require('fidget.notification').default_config
-        #   '';
-        # };
+        configs = {
+          default = "require('fidget.notification').default_config";
+        };
 
         window = {
           normalHl = "Comment";
